@@ -37,13 +37,17 @@ int main(int argc, char *argv[]) {
     QObject::connect(console, &QTermWidget::urlActivated,  mainWindow, activateUrl);
     QObject::connect(console, &QTermWidget::termKeyPressed, mainWindow,
 		    [=](const QKeyEvent *key) -> void {
-                         if (key -> matches(QKeySequence::Copy)) {
+                         if (key -> modifiers() & Qt::ControlModifier &&
+			     key -> modifiers() & Qt::ShiftModifier &&
+			     key -> key() == Qt::Key_C) {
                              console -> copyClipboard();
 			 }
                     });
     QObject::connect(console, &QTermWidget::termKeyPressed, mainWindow,
 		    [=](const QKeyEvent *key) -> void {
-                         if (key -> matches(QKeySequence::Paste)) {
+                         if (key -> modifiers() & Qt::ControlModifier &&
+			     key -> modifiers() & Qt::ShiftModifier &&
+			     key -> key() == Qt::Key_V) {
                              console -> pasteClipboard();
                          }
 		    });
