@@ -1,4 +1,5 @@
 # PJTerm
+![Fastfetch](https://github.com/user-attachments/assets/cf09e7ff-1e64-4fa4-b468-3958fab379c6)
 This is a terminal that I built using a guide by DonnieWest of Code Koalas which can be found here: https://codekoalas.com/blog/build-your-own-minimal-terminal
 Full credit goes to him.
 
