@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PJTerm
+Comment=A Terminal Emulator created in C++ with Qt6
+Exec=/usr/local/bin/PJTerm
+Icon=utilities-terminal
+Type=Application
+Categories=QT;System;TerminalEmulator;

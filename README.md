@@ -14,8 +14,6 @@ This program only works with Linux and has not been tested on MacOS X
 4. Now you can run the program PJTerm by clicking on the binary file in a file manager or by running `./PJTerm` in another terminal
 
 ## Usage
-As of now, the desktop doesn't recognize the terminal. For some reason, even putting it in `/usr/local/bin` did nothing, so we have to use `./PJTerm` in the directory where it was installed instead
-
 You can change certain aspects of the terminal like the colorschemes by manually changing it in settings.h and then recompiling.
 
 ## Credits
